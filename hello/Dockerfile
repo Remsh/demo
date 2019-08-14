@@ -1,4 +1,4 @@
-FROM qce-reg.cloudappl.com/library/golang:1.11-alpine AS build
+FROM golang:1.11-alpine AS build
 
 WORKDIR /src/
 COPY main.go go.* /src/
