@@ -14,7 +14,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 	}
 	
-	fmt.Println("hostname:", name)
+	fmt.Fprintln(w，"hostname:", name)
 }
 
 func main() {
